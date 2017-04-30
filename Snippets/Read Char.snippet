@@ -3,25 +3,29 @@
   <CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>
-				<!-- Snipper Title here -->
+				Read Char from Console
 			</Title>
 			
 			<Description>
-				<!-- Snippet Description here -->
+				Reads a char value from the console
 			</Description>
 			
-			<Shortcut>
-				<!--  The shortcut for the snippet (like 'cw' for Console.WriteLine) -->
-			</Shortcut>
+			<Shortcut>crlc</Shortcut>
 		</Header>
 		
 		<Snippet>
 			<Declarations>
-				<!--  Everything that can be replaced in the snippet here -->
+				<Literal>
+					<ID>input</ID>
+					<Tooltip>Enter actual variable name</Tooltip>
+					<Default>charInput</Default>
+				</Literal>
 			</Declarations>
 			
 			<Code Language="CSharp">
-				<![CDATA[Code to be added in Visual Studio here]]>
+				<![CDATA[
+						char $input$ = char.Parse(Console.ReadLine());
+					]]>
 			</Code>
 </Snippet>
   </CodeSnippet>
